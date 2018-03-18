@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div1 {}
+		</style>
+	</head>
+	<body>
+		var a = 9;
+			
+		<script>
+			// 学生ID   单行注释
+			var studentId = 1001;
+			
+			/*
+			 * 被注释的代码     块注释
+			 */
+			
+			// var 变量声明的标识符
+			// = 赋值符号
+			// 每行代码的结束，建议用分号结尾
+			var a = 9;
+			// 变量类型好有值都可以被修改
+			a = 'hello'; // 字符串
+			
+			// var 2a = 9;  // 错的
+			var a2 = 9;
+			
+			// var if = 9;
+			
+			// 在控制台数据数据，通常用于调试程序
+			// 没有阻塞性
+			console.log(a);
+			
+			// 文本提示框，不建议用它调试程序，因为会阻塞代码
+			//alert(a);
+			//alert(a2);
+			
+			// 查看变量类型
+			console.log(typeof a);
+			console.log(typeof(a2));
+			
+			// \ 转义字符
+			var b = 'ab\'c';
+			var b = "ab'c";
+			
+			// js 是基于对象的一门语言，js 中一切皆对象
+			// 对象.方法()  =>  表示的是方法的调用
+			// 数值类型的变量.toString()  =>  把数值类型转成字符串
+			var c = a2.toString();
+			console.log(typeof c);
+			console.log(typeof a2.toString());
+			
+			var a = 8;
+			console.log(a);
+			
+			// + 如果两边都是数值类型，表示加法
+			// + 如果至少有一边是字符串，就表示字符串的拼接
+			console.log(a + '');
+			
+			var a = 'a200px300';
+			console.log(parseInt(a)); // NaN => not a number
+			// parseInt(变量)   '200'   '200px'   '200px300'   'a200'
+			
+			var a = '12.345';
+			// parseFloat(变量)  转浮点型    底层原理和 parseInt 一样
+			console.log(parseFloat(a));
+			
+			/*function parseFloat(val){
+				// ...
+				return val;
+			}*/
+			
+			//console.log(a);
+			
+			// a += 5; // a = a + 5
+			
+			var a = 9;
+			var b = '9px';
+			
+			// 只有严格的数值类型的字符串才可以有效转换
+			console.log(Number(b));
+			
+			console.log(NaN == NaN); // false
+			
+			if (a == b){
+				console.log('相等');
+			} else {
+				console.log('不相等');
+			}
+			
+			// 返回的是表达式中某一位的具体的值
+			console.log(2 || 0 || 7); // 2
+			console.log(0 || 5 || 3); // 5
+			console.log(2 && 5 && 0); // 0
+			console.log(2 && 0 && 4); // 0
+			console.log(2 || '' && 7); // 2
+			// 短路原则
+			console.log(4 && 5 && 9); // 9
+			
+			// Js中表示假的有 false 0 '' null undefined NaN
+
+			console.log(true + 5); // 6
+			
+			// js 一定在脑子里就很清楚这些变量的类型和值
+			
+		</script>
+	</body>
+</html>
+
